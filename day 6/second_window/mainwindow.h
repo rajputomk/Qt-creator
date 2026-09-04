@@ -1,5 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+#include <seconddialog.h>
 
 #include <QMainWindow>
 
@@ -22,5 +23,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    secondDialog *sd;
 };
 #endif // MAINWINDOW_H

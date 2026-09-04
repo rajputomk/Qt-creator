@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <seconddialog.h>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,7 +14,8 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::on_pushButton_2_clicked() {
-    secondDialog obj;
-    obj.exec();
+    hide();
+    sd = new secondDialog(this);
+    sd->show();
 }
 
